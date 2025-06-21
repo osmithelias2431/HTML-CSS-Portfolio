@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <nav id="nav-bar">
+        <h4 class="page-title">Portfolio</h4>
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#contactform" class="nav-item">Contact</a>
+    </nav>
+    <!-- Hero Section -->
+     <header id="home"> 
+        <h1 id="hero-header">Hi, I'm Oneilia</h1>      
+        <p>Software Development Trainee</p>
+        <button type="button" id="hero-button">Check Out My Work</button>
+     </header>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a software development trainee with a passion for creating eye-catching webpages.</p>
+        <p>Student at NPower</p>
+        <p>HTML</p> 
+        <p>CSS</p>
+    </section>
+    <!-- Projects Section -->
+    <main>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="project-container">
+                <div class="project-item">
+                    <h2>Project 1: Portfolio</h2>
+                    <p>This is my portfolio website showcasing my skills and projects.</p>
+                    <a href="" class="project-link">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h2>Project 2: Responsive Design</h2>
+                    <p>A responsive webpage that adapts to different screen sizes.</p>
+                    <a href="" class="project-link">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h2>Project 3: CSS Animations</h2>
+                    <p>A webpage demonstrating various CSS animations and transitions.</p>
+                    <a href="" class="project-link">View Project</a>
+                </div>
+
+        </section>
+    </main>
+    <!-- Contact Form-->
+    <fieldset id="contact-form">
+        <form>
+             <p id="contact-title" class="contact-item">Let's Connect!</p> 
+             <label>
+                <input type="text" id="contact-name" class="contact-item" name="name" placeholder="Your Name" required>
+             </label>
+             <br>
+             <label>
+                  <input type="email" class="contact-item" name="email" placeholder="Your Email Address" required>
+             </label>
+             <br>
+             <label>
+                <textarea id="contact-text" name="message" class="contact-item" placeholder="Feedback" required></textarea>
+             </label>
+             <br>
+             <button type="submit" id="contact-button" class="contact-item">Submit</button>
+        </form>
+    </fieldset>
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+        <p> Oneilia's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
