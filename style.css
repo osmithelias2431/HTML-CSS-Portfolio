@@ -1,16 +1,30 @@
 body {
     background-image: linear-gradient(to bottom,  rgba(163,213,255,1) 11.3%, rgba(4,137,137,1) 86.7% );
     font-family: Arial, sans-serif;
-    margin: 20px;
+    color: rgb(1, 45, 45);
 }
+/* Navigation Bar */
 #nav-bar {
-    display: flex;
-
+    display: flex; 
+    justify-content: flex-end;
+    color: rgb(1, 45, 45);
+    width: 100%;
 }
 .nav-item {
+    margin: 0 15px;
+    padding-top: 20px;
+    color: rgb(1, 45, 45);
+    text-decoration: none;
+    cursor: pointer;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+}
+#page-title {
+    display: flex;
+    justify-content: flex-start;
+}
+.header {
+    display: flex;
 }
 #home {
     display: flex;
@@ -18,14 +32,13 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #739fb4;
-    margin: -10px;
-    max-width: 100%;
+    margin-left: -10px;
+    margin-right:
+    width: 100%;
     height: 100vh;
     background-size: cover;
     animation: moveBackground 20s linear infinite;
     background-image: url(assets/computer\ background.jpg);
-    background-image min-width: 250%;
-
 }
 #hero-header {
     margin: 2px;
@@ -42,6 +55,16 @@ body {
 }
 #hero-image {
     border: 5px solid rgba(4,137,137,1);
+}
+.profile-pic {
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    border: 5px groove;
+    border-color:rgb(1, 45, 45);
+    display: flex;
+    align-items: center;
+    margin: auto;
 }
 #contact-form {
     display: flex;
@@ -80,8 +103,6 @@ body {
     color: white;
     padding: 20px;
 }
-.social-links {
-}
 @keyframes moveBackground {
   0% {
     background-position: 0 0;
@@ -89,23 +110,4 @@ body {
   100% {
     background-position: 100% 0;
   }
-}
-@media (max-width: 600px) {
-  
-    .nav-item {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    #home {
-        height: auto;
-        padding: 20px;
-    }
-    #hero-image {
-        width: 150px;
-        height: 150px;
-    }
-    #contact-form {
-        width: 90%;
-    }
 }
