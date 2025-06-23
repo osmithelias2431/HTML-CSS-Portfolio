@@ -1,6 +1,7 @@
 body {
     background-image: linear-gradient(to bottom,  rgba(163,213,255,1) 11.3%, rgba(4,137,137,1) 86.7% );
     font-family: Arial, sans-serif;
+    margin: 20px;
 }
 #nav-bar {
     display: flex;
@@ -10,8 +11,6 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 10px 20px;
-    margin: 10px;
 }
 #home {
     display: flex;
@@ -19,11 +18,13 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #739fb4;
-    padding: 10px 20px;
-    height: 500px;
+    margin: -10px;
+    max-width: 100%;
+    height: 100vh;
     background-size: cover;
     animation: moveBackground 20s linear infinite;
     background-image: url(assets/computer\ background.jpg);
+    background-image min-width: 250%;
 
 }
 #hero-header {
@@ -40,8 +41,6 @@ body {
     cursor: pointer;
 }
 #hero-image {
-    width: 200px;
-    height: 200px;
     border: 5px solid rgba(4,137,137,1);
 }
 #contact-form {
@@ -49,6 +48,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: 20px;
 }
 #contact-title {
     font-size: 25px;
@@ -69,6 +70,18 @@ body {
     color: white;
     cursor: pointer;
 }
+.footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(4,137,137,1);
+    color: white;
+    padding: 20px;
+}
+.social-links {
+}
 @keyframes moveBackground {
   0% {
     background-position: 0 0;
@@ -76,4 +89,23 @@ body {
   100% {
     background-position: 100% 0;
   }
+}
+@media (max-width: 600px) {
+  
+    .nav-item {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #home {
+        height: auto;
+        padding: 20px;
+    }
+    #hero-image {
+        width: 150px;
+        height: 150px;
+    }
+    #contact-form {
+        width: 90%;
+    }
 }
