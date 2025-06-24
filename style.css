@@ -199,6 +199,10 @@ img {
   }
 }
 @media (min-width: 768px) {
+    #home {
+        background-size: fill;
+    
+    }
     .profile-pic {
         width: 300px;
         height: auto;
