@@ -6,6 +6,9 @@
     <title>HTML/CSS Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -22,21 +25,25 @@
      <header id="home"> 
         <h1 id="hero-header">Hi, I'm Oneilia</h1>      
         <p>Software Development Trainee</p>
-        <button type="button" id="hero-button">Check Out My Work</button>
+        <button type="button" id="hero-button"><span>Check Out My Work</span></button>
      </header>
     <!-- About Section -->
     <section id="about">
         <h2 id="about-header">About Me</h2>
-        <img src="assets/Nelly Profile Pic.JPG" alt="Oneilia's Profile Picture" class="profile-pic">
-        <div class="about-text">
-            <p><strong>A motivated woman building knowledge about software.</strong><br>I'm a software development trainee studying Javascript and Python. I'm eager to learn more about creating eye-catching webpages.</p>
-        </div>
-        <div class="skills">
-            <p class="skills-item">NPower Student</p>
-            <p class="skills-item">HTML</p> 
-            <p class="skills-item">CSS</p>
+        <div class="about-content">
+            <img src="assets/Nelly_Profile_Pic.JPG" alt="Oneilia's Profile Picture" class="profile-pic">
+            <div class="about-text">
+                <p><strong>A motivated woman building knowledge about software.</strong>
+                <br><br>I'm a software development trainee studying Javascript and Python. I'm eager to learn more about creating eye-catching webpages.</p>   
+                <div class="skills">
+                    <p class="skills-item">NPower Student</p>
+                    <p class="skills-item">HTML</p> 
+                    <p class="skills-item">CSS</p>
+                </div>                    
+            </div>
         </div>
     </section>
+
     <!-- Projects Section -->
     <main>
         <section id="projects">
@@ -46,8 +53,8 @@
                     <img src="assets/travel_image.jpg" alt="Travel Review App" class="project-image">
                     <div class="card-content">
                         <h2>Travel Review App</h2>
-                        <p>An app to review travel destinations built with Javascript</p>
-                        <a href="" class="project-link">View Project</a>
+                        <p>An app to review travel destinations built with Javascript.</p>
+                        <button type="button" class="project-button">View Project</button>
                     </div>
                 </div>
                 <div class="card">
@@ -55,7 +62,7 @@
                     <div class="card-content">
                         <h2>Nail Selector App</h2>
                         <p>An app that assists in choosing nail designs.</p>
-                        <a href="" class="project-link">View Project</a>
+                        <button type="button" class="project-button">View Project</button>
                     </div>
                 </div>
                 <div class="card">
@@ -63,7 +70,7 @@
                     <div class="card-content">
                         <h2>App Inventor</h2>
                         <p>Idea app.</p>
-                        <a href="" class="project-link">View Project</a>
+                        <button type="button" class="project-button">View Project</button>
                     </div>
                 </div>
             </div>    
@@ -71,7 +78,7 @@
         </section>
     </main>
     <!-- Contact Form-->
-     <div id="contact-form">
+    <div id="contact-form">
     <fieldset>
         <form>
              <p id="contact-title" class="contact-item">Let's Connect!</p> 
