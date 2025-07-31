@@ -119,6 +119,14 @@ box-shadow:
     color: white;
     font-size: 45px;
 }
+#hero-header::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    100% {opacity: 0; }
+}
 #hero-button {
     background-color: rgba(128, 0, 128, 1);
     color: white;
