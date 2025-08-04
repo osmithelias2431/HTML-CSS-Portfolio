@@ -112,7 +112,7 @@ box-shadow:
     background-image: url(assets/computer_background.jpg);
     background-size: cover;
     animation: moveBackground 20s linear infinite;
-    margin-top: -90px;
+    margin-top: -100px;
     color: white;
 }
 #hero-header {
@@ -233,7 +233,7 @@ box-shadow:
     border: 2px purple;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    width: 100%;
+    width: 90vw;
     height: 28rem;
     margin: 1rem;
     padding: 10px;
@@ -290,6 +290,10 @@ box-shadow:
 }
 
 /* Contact Section */
+#fieldset {
+    padding: 5%;
+    margin: 5%;
+}
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -414,11 +418,17 @@ p {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         padding: 0;
         margin: 2%;
+        display: flex;
+        flex-direction: row;
     }
     .card {
-        width: 100%;
-        margin: .5vw;
+        width: 30%;
+        height: 30%;
+        margin: 0;
         grid-column: auto;
+        display: flex;
+        flex-direction: column;
+
     }
     
 /* Footer*/
@@ -433,10 +443,18 @@ p {
     body {
         width: 100%;
     }
+    /* Navigation Bar*/
+    #nav-bar {
+        margin-top: 5px;
+    }
+    /* Hero Section */
     #home {
         width: 100vw;
     }
-
+    /* Contact Form */
+    #fieldset {
+        max-width: 350px;
+    }
     #contact-form {
         width: 80vw;
         margin: 0 auto;

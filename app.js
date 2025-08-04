@@ -28,7 +28,7 @@ function typeWriter(element, text, i = 0) {
     if (i === text.length - 1) {
     return;
 }
-  setTimeout(() => typeWriter(element, text, i + 1), 100);
+  setTimeout(() => typeWriter(element, text, i + 1), 100); 
   
 }
 
